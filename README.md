@@ -44,8 +44,8 @@ To establish a connection with the database, incude the following in app.js file
 
 var mysql = require('mysql');
 
-// To estalish connection with sql server </br>
-// =====================================
+To estalish connection with sql server </br>
+=====================================
 
 var connection = mysql.createConnection({</br>
   host     : 'localhost',</br>
@@ -59,15 +59,15 @@ Run the sql file from the sql terminal using source schema.sql
 
 <strong>To add random data -</strong> 
 
-// var person = {</br>
-//     email: faker.internet.email(),</br>
-//     created_at: faker.date.past()</br>
-// };
+var person = {</br>
+email: faker.internet.email(),</br>
+     created_at: faker.date.past()</br>
+ };
  
-// var end_result = connection.query('INSERT INTO users SET ?', person, function(err, result) {</br>
-//   if (err) throw err;</br>
-//   console.log(result);</br>
-// });
+ var end_result = connection.query('INSERT INTO users SET ?', person, function(err, result) {</br>
+   if (err) throw err;</br>
+   console.log(result);</br>
+ });
 
 To add 500 rows, we use the following command
 
