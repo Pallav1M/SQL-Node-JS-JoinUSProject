@@ -47,9 +47,9 @@ var mysql = require('mysql');
 // To estalish connection with sql server </br>
 // =====================================
 
-var connection = mysql.createConnection({
-  host     : 'localhost',
-  user     : 'root',
+var connection = mysql.createConnection({</br>
+  host     : 'localhost',</br>
+  user     : 'root',</br>
   database : 'join_us'
 });
 
@@ -59,32 +59,32 @@ Run the sql file from the sql terminal using source schema.sql
 
 <strong>To add random data -</strong> 
 
-// var person = {
-//     email: faker.internet.email(),
-//     created_at: faker.date.past()
+// var person = {</br>
+//     email: faker.internet.email(),</br>
+//     created_at: faker.date.past()</br>
 // };
  
-// var end_result = connection.query('INSERT INTO users SET ?', person, function(err, result) {
-//   if (err) throw err;
-//   console.log(result);
+// var end_result = connection.query('INSERT INTO users SET ?', person, function(err, result) {</br>
+//   if (err) throw err;</br>
+//   console.log(result);</br>
 // });
 
 To add 500 rows, we use the following command
 
-var data = [];
-for(var i = 0; i < 500; i++){
-    data.push([
-        faker.internet.email(),
-        faker.date.past()
+var data = [];</br>
+for(var i = 0; i < 500; i++){</br>
+    data.push([</br>
+        faker.internet.email(),</br>
+        faker.date.past()</br>
     ]);
 }
  
  
 var q = 'INSERT INTO users (email, created_at) VALUES ?';
  
-connection.query(q, [data], function(err, result) {
-  console.log(err);
-  console.log(result);
+connection.query(q, [data], function(err, result) {</br>
+  console.log(err);</br>
+  console.log(result);</br>
 });
  
 connection.end();
