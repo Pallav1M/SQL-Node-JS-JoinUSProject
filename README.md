@@ -78,8 +78,7 @@ for(var i = 0; i < 500; i++){</br>
         faker.date.past()</br>
     ]);
 }
- 
- 
+  
 var q = 'INSERT INTO users (email, created_at) VALUES ?';
  
 connection.query(q, [data], function(err, result) {</br>
@@ -88,3 +87,37 @@ connection.query(q, [data], function(err, result) {</br>
 });
  
 connection.end();
+
+<strong>Express (Framework used for Node)</strong>
+
+Run npm init (installs the  package.json file used for express)
+
+Under the Join_Us(newly created folder), create app.js file
+
+Go to the directory using cd 
+
+Next install express, faker, and sql 
+
+npm install express --save (save will save it in the package.json file)
+
+npm install faker sql --save 
+
+<strong>Integrate Express WebApp with MySQL</strong>
+
+To view result - 
+
+<img width="1200" alt="Screen Shot 2022-10-07 at 12 25 35 PM" src="https://user-images.githubusercontent.com/70488044/194638933-247d107e-3864-4c23-9369-dc9f1d434f16.png">
+
+<strong>Adding EJS Template</strong>
+
+(allows you to embed JS inside of it) 
+
+npm install ejs --save 
+
+Next, create a new folder Views, and under Views, create home.ejs.
+
+Validate if everything works fine by inserting a data and seeing if it reflects in the app.
+
+
+
+
