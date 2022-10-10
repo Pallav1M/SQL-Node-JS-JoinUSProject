@@ -118,6 +118,10 @@ Next, create a new folder Views, and under Views, create home.ejs.
 
 Validate if everything works fine by inserting a data and seeing if it reflects in the app.
 
+<strong>Connecting the form</strong>
+
+We need to define a post route
+
 
 
 
