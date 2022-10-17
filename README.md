@@ -13,7 +13,7 @@ Then Project --> Running URL and Port and click on the run icon (between the url
 To validate this as a SQL query, go to the SQL terminal by opening a new terminal and typing 
 mysql-ctl cli
 
-<strong>Note</Note> Make sure you are using the Join_us databases
+<strong>Note</strong> Make sure you are using the Join_us databases
 
 Show databases;
 use join_us;
