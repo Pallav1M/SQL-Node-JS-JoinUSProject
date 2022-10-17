@@ -4,6 +4,26 @@ This simple project demonstrates how the mailing list application is connected t
 
 This is built using a <strong>GoormIDE container</strong>
 
+Please view all files from the container under https://goor.me/9XD7Z
+
+To view the result, type node app.js from under the Join_Us folder
+
+Then Project --> Running URL and Port and click on the run icon (between the url and the copied icon). Enter an email id followed by the "Join Now" button to see the count update. 
+
+To validate this as a SQL query, go to the SQL terminal by opening a new terminal and typing 
+mysql-ctl cli
+
+<strong>Note</Note> Make sure you are using the Join_us databases
+
+Show databases;
+use join_us;
+
+select * from users order by created_at desc limit 1;
+
+You should see the most recently added email id. 
+
+<strong> Details </strong>
+
 The first goal is for NodeJS to randomly generate and insert 500+ users into the database with all unique emails. 
 
 <strong>Faker</strong>
